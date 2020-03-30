@@ -44,6 +44,10 @@ extern "C" {
     res.reliable = is_reliable;
     return res;
   }
+  
+  void Init_libcld2() {
+  }
+
 }
 
 int main(int argc, char **argv) {
