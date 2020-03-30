@@ -8,7 +8,7 @@ module CLD
   suffix = if FFI::Platform.mac?
     'bundle'
   else
-    FFI::Platform::LIBSUFFIX
+    "so"
   end
 
   ffi_lib File.join(File.expand_path(File.dirname(__FILE__)), '..', 'ext', 'cld', 'libcld2.' + suffix)
